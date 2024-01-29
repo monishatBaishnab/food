@@ -326,6 +326,16 @@ footer .container .link-container .links a {
   color: white;
   margin-bottom: 10px;
 }
+footer .container .socials-i {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer .container .socials-i i {
+  font-size: 20px;
+  color: white;
+}
 
 @media (max-width: 982px) {
   .food .container .categories {
@@ -415,5 +425,11 @@ footer .container .link-container .links a {
   footer .container .link-container {
     grid-column: span 2/span 2;
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer .container .logo .socials {
+    display: none;
+  }
+  footer .container .socials-i {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
