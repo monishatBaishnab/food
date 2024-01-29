@@ -186,11 +186,12 @@ header .sm-nav .inner .buttons .signup-btn {
 }
 .slider .container .right {
   position: relative;
+  min-height: 200px;
 }
 .slider .container .right .img-box {
   position: absolute;
   left: 0;
-  top: -120px;
+  top: 0px;
   width: 100%;
   z-index: -1;
 }
