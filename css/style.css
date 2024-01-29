@@ -241,6 +241,17 @@ header .sm-nav .inner .buttons .signup-btn {
 .food .container .food-cards .food-card .price {
   font-weight: 600;
 }
+.food .container .food-cards .food-card div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.food .container .food-cards .food-card div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .food .container .food-cards .food-card button {
   padding: 9.5px 20px;
   background: #F72D57;
@@ -249,6 +260,87 @@ header .sm-nav .inner .buttons .signup-btn {
   margin-top: 15px;
 }
 
+.know-us .container .title h1 {
+  text-align: left;
+}
+.know-us .container .team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.know-us .container .team .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.know-us .container .team .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.know-us .container .team .right h2 {
+  font-size: 36px;
+}
+.know-us .container .team .right h2 span {
+  color: #F72D57;
+}
+.know-us .container .team .right p {
+  color: #3F3F3F;
+}
+
+footer {
+  background-color: #F72D57;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+footer .container .logo a {
+  font-size: 48px;
+  font-family: "Praise", cursive;
+  color: white;
+}
+footer .container .logo .socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .container .logo .socials i {
+  font-size: 20px;
+  color: white;
+}
+footer .container .link-container {
+  grid-column: span 4/span 4;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .container .link-container .links a {
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 982px) {
+  .food .container .categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .food .container .food-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .container .link-container {
+    grid-column: span 3/span 3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 768px) {
   header {
     border-bottom: 2px solid #EBEBEB;
@@ -284,15 +376,43 @@ header .sm-nav .inner .buttons .signup-btn {
   }
   .slider .container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
   }
-  .slider .container .left {
-    min-height: 400px;
+  .food .container .categories {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .slider .container .right {
-    min-height: 400px;
+  .food .container .food-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .slider .container .right .img-box {
-    top: 0;
+  .food .container .link-container {
+    grid-column: span 2/span 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .know-us .container .title h1 {
+    text-align: left;
+  }
+  .know-us .container .team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    background-color: #F72D57;
+  }
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .food .container .categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .food .container .food-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .container .link-container {
+    grid-column: span 2/span 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
