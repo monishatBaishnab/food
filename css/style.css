@@ -23,6 +23,15 @@ button {
   padding: 40px 20px;
 }
 
+.title h1 {
+  font-size: 48px;
+  color: #3F3F3F;
+  text-align: center;
+}
+.title h1 span {
+  color: #F72D57;
+}
+
 header .nav {
   display: flex;
   align-items: center;
@@ -160,6 +169,86 @@ header .sm-nav .inner .buttons .signup-btn {
   margin: 0 auto;
 }
 
+.slider .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.slider .container .left h1 {
+  font-size: 48px;
+  color: #3F3F3F;
+}
+.slider .container .left h1 span {
+  color: #F72D57;
+}
+.slider .container .left p {
+  margin-top: 24px;
+}
+.slider .container .right {
+  position: relative;
+}
+.slider .container .right .img-box {
+  position: absolute;
+  left: 0;
+  top: -120px;
+  width: 100%;
+  z-index: -1;
+}
+.slider .container .right .img-box img {
+  width: 100%;
+}
+
+.food .container .categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.food .container .categories .category {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: 2px solid #F72D57;
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #F72D57;
+}
+.food .container .categories .category h4 {
+  font-weight: normal;
+}
+.food .container .categories .category:hover {
+  background: #F72D57;
+  color: white;
+}
+.food .container .categories .category.active {
+  background: #F72D57;
+  color: white;
+}
+.food .container .food-cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.food .container .food-cards .food-card {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.food .container .food-cards .food-card .price {
+  font-weight: 600;
+}
+.food .container .food-cards .food-card button {
+  padding: 9.5px 20px;
+  background: #F72D57;
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
 @media (max-width: 768px) {
   header {
     border-bottom: 2px solid #EBEBEB;
@@ -192,5 +281,18 @@ header .sm-nav .inner .buttons .signup-btn {
   }
   header .sm-nav {
     display: inline-block;
+  }
+  .slider .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .slider .container .left {
+    min-height: 400px;
+  }
+  .slider .container .right {
+    min-height: 400px;
+  }
+  .slider .container .right .img-box {
+    top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
